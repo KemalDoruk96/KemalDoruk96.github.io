@@ -1,0 +1,270 @@
+/*   Universal Styles */
+
+@font-face{
+ 
+  font-family:"Merriweather" ;
+  src: url("fonts/Merriweather-Regular.ttf");
+}
+
+
+html{
+    font-family: "Merriweather", sans-serif;
+    font-size: 16px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+}
+.main-content {
+  position: relative;
+  top: 0.5rem; /* To offset for fixed header. */
+  
+  
+
+}
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.horizantal-contaniner{
+  display:flex;
+  flex-wrap: column wrap;
+}
+
+
+/* header section */
+header {
+    position: sticky;
+    z-index: 20;
+    width: 100%;
+    height:7%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+    
+   
+  }
+
+
+header  #content{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  flex-direction:row wrap;
+  justify-content: space-between;
+
+}
+header .icon{
+  width: 1.5rem;
+  padding-left: .75rem;
+
+}
+
+
+nav ul li{
+  display: inline;
+  padding-left: 1rem;
+ 
+}
+
+header .mobile{
+  display: none;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color:#4a4a4a ;
+  box-shadow: 0px 8px 5px -8px rgba(0,0,0,0.1);
+  
+}
+@media only screen and (max-width: 895px) {
+  nav li:last-child {
+    display: block;
+  }
+
+  header .content {
+    padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: .5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+   
+  header .icon{
+    display: none;
+  }
+
+}
+
+.img1{
+  height:15rem;
+  width:auto;
+  background-image:url("../images/plan2.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+
+
+/* main section */
+
+.main{
+  
+   display: flex;
+   flex-flow: row wrap;
+   height:auto;
+   width: 100%;
+  
+   
+}
+  
+
+
+/* sections */
+.section{
+  width: 20rem;
+  height: 90rem;
+  background-color: transparent;
+  border-right: 2px solid lightgrey;
+  margin: 3px 3px;
+  text-align: center;
+  font-family:"Merriweather";
+  
+
+}
+figcaption{
+  text-align: center;
+}
+
+.left{
+  flex-basis:3rem;
+  flex-grow:1;
+  overflow-y: scroll;
+}
+
+.right{
+   flex-grow:2;
+   padding:3rem;
+   display: flex;
+   flex-direction: column;
+     
+}
+#food{
+   padding: 1rem;
+   border-bottom: 3px solid brown;
+   
+}
+@media only screen and (min-width:600px) and (max-width: 895px){
+  .left{
+    flex: 1;
+
+  }
+  .right{
+    flex: 1;
+  }
+  .left .image-container{
+    max-width: max-content;
+  }
+
+  
+}
+@media only screen and (max-width: 600px){
+
+  .main{
+     justify-content: center;
+     align-items: center;
+
+  }
+
+
+}
+
+/* Footer */
+
+footer {
+  margin-top: 0.5rem;
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: .75rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  footer .content {
+    font-size: .625rem;
+  }
+  footer{
+    margin-top: 9rem;
+  }
+
+
+}
+
+@media only screen and (min-width:600px) and (max-width: 895px){
+   footer{
+    display: none;
+   }
+
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
